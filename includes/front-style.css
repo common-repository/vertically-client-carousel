@@ -1,0 +1,103 @@
+#cbvcc-carousel .carousel {
+    border: 1px solid #bababa;
+    /*border-radius: 10px;*/
+    background-color: ghostwhite;
+    float: left;
+    padding-left: 10px;
+
+    /* Needed for rendering without flicker */
+    position: relative;
+    visibility: hidden;
+    left: -5000px;
+}
+
+/* Styling for image based carousel content. Only width and height are mandatory */
+#cbvcc-carousel .carousel>ul>li>img {
+	width: 150px;
+	height: 150px;
+	vertical-align:middle;
+
+	/* optional */
+	margin: 10px 10px 10px 0;
+	/*border-radius: 5px;*/
+}
+    
+#cbvcc-carousel .carousel>ul>li> a >img {
+	width: 150px;
+	height: 150px;
+	vertical-align:middle;
+
+	/* optional */
+	margin: 10px 10px 10px 0;
+	border-radius: 5px;
+}
+
+/* Styling for text based carousel content. Only width and height are mandatory */
+#cbvcc-carousel .carousel>ul>li>p {
+	width: 130px;
+	height: 98px;
+
+	margin: 10px 10px 10px 0;
+	border: 1px solid #808080;
+	border-radius: 5px;
+	line-height: normal;
+	background-color: #fff;
+	padding: 10px;
+}
+
+/* Styles for PREV and NEXT anchor buttons */
+#cbvcc-carousel a.prev, #cbvcc-carousel a.next, #cbvcc-carousel a.go {
+    display: block;
+    width: 26px;
+    height: 30px;
+    line-height: 1;
+
+    background-color: /*#333333*/ #d2d2d2;
+    color: ghostwhite;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+
+    border-radius: 8px;
+    float: left;
+    transform:rotate(-90deg);
+    left:73px;
+    color:#000;
+}
+    #cbvcc-carousel a.prev.disabled, #cbvcc-carousel a.next.disabled,
+    #cbvcc-carousel a.prev.disabled:hover, #cbvcc-carousel a.next.disabled:hover {
+        background-color: #8d8d8d;
+        cursor: default;
+    }
+    #cbvcc-carousel a.go.highlight {
+        background-color: #dedede;
+        color: #000;
+    }
+    #cbvcc-carousel a.prev {
+        margin: 50px -5px 0 0;
+        text-indent: 7px;
+        position:absolute;
+        bottom:-21px;
+    }
+   
+#cbvcc-carousel a.next {
+    margin: 0;
+    position: absolute;
+    text-indent: 10px;
+    top: -21px;
+}
+#cbvcc-carousel a.prev:hover, #cbvcc-carousel a.next:hover, #cbvcc-carousel a.go:hover {
+	background-color: #666666;
+}
+
+/* Additional carousel styles for external controls, slider, widget, mid etc. */
+
+#cbvcc-carousel .externalControl button,
+#cbvcc-carousel .imageSliderExt button {
+    margin: 5px 5px 0 0;
+}
+
+
+#cbvcc-carousel .custom-container.vertical {
+    position: relative;
+}
